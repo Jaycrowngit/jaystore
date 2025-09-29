@@ -16,10 +16,6 @@ dependencies:
   intl: ^0.20.2
   logger: ^2.6.1
   url_launcher: ^6.3.2
-  smooth_page_indicator: ^1.2.1
-  connectivity_plus: ^6.1.4
-  lottie: ^3.3.1 # OR RIVE
-  iconsax: ^0.0.8
 
 #------Utility packages--------------#
 http: ^1.5.0

@@ -1,20 +1,13 @@
 
-/// This class contains all the App Text in String formats.
-class TTexts {
+// This class contain all the App text in strings format
 
-  // -- GLOBAL Texts
-  static const String and = "and";
-  static const String skip = "Skip";
-  static const String done = "Done";
-  static const String submit = "Submit";
-  static const String appName = "T-Store";
-  static const String tContinue = "Continue";
+class TTexts{
+// Global Text
 
-
-  // -- OnBoarding Texts
-  static const String onBoardingTitle1 = "Choose your product";
-  static const String onBoardingTitle2 = "Select Payment Method";
-  static const String onBoardingTitle3 = "Deliver at your door step";
+// ---OnBoarding Texts
+static const String onBoardingTitle1 = "Choose your product";
+static const String onBoardingTitle2 = "Select Payment";
+static const String onBoardingTitle3 = "Deliver at your door steo";
 
   static const String onBoardingSubTitle1 = "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!";
   static const String onBoardingSubTitle2 = "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!";
