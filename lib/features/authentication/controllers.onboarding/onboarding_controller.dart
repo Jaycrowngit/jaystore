@@ -11,7 +11,7 @@ final pageController = PageController();
 Rx<int> currentPageIndex = 0.obs;
 
 /// Update Current Index when page Scroll
-void updatePageIndicator(index) => currentPageIndex = index;
+void updatePageIndicator(index) => currentPageIndex.value = index;
 
 /// Jump to the specific dot selected page.
 void dotNavigationClick(index){
