@@ -4,7 +4,7 @@ import 'package:jaystore/common/widgets/custom_shapes/curved_shape/curved_shape_
 import 'package:jaystore/utils/constants/colors.dart';
 
 class TPrimaryHeaderContainer extends StatelessWidget {
-  const TPrimaryHeaderContainer({
+  const  TPrimaryHeaderContainer({
     super.key,
     required this.child,
   });
@@ -16,10 +16,8 @@ class TPrimaryHeaderContainer extends StatelessWidget {
     return TCurvedEdgeWidget(
       child: Container(
         color: TColors.primary,
-        padding: const EdgeInsets.all(5),
         child: SizedBox(
-          height: 400,
-          width: double.infinity,
+          height: 360,
           child: Stack(
             children: [
               // -- Background Custom Shapes

@@ -3,7 +3,8 @@ import 'package:jaystore/common/widgets/custom_shapes/curved_shape/curved_shape.
 
 class TCurvedEdgeWidget extends StatelessWidget {
   const TCurvedEdgeWidget({
-    super.key, this.child,
+    super.key, 
+    this.child,
   });
 
   final Widget? child;

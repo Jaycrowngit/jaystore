@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:jaystore/utils/constants/sizes.dart';
 import 'package:jaystore/utils/devices/device_utility.dart';
 
 class TAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const TAppBar({
+  const TAppBar( {
     super.key,
     this.title,
     this.showBackArrow = false,
@@ -22,9 +23,10 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
      return 
-    // Padding(
-    //   padding: const EdgeInsets.symmetric(horizontal: TSizes.md),
-    //   child: 
+     Padding(
+       padding: const EdgeInsets.symmetric(horizontal: TSizes.md),
+    
+       child: 
     AppBar(
         automaticallyImplyLeading: false,
         leading: showBackArrow
@@ -40,6 +42,7 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
                 : null,
         title: title,
         actions: actions,
+    ),
     );
     
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jaystore/common/widgets/appbar/appbar.dart';
-import 'package:jaystore/common/widgets/product.cart/cart_menu_icon.dart';
+import 'package:jaystore/common/widgets/product/cart/cart_menu_icon.dart';
 import 'package:jaystore/utils/constants/colors.dart';
 import 'package:jaystore/utils/constants/text_strings.dart';
 

@@ -11,6 +11,8 @@ class THelperFunctions {
         return Colors.red;
       case 'blue':
         return Colors.blue;
+        case 'yellow':
+        return Colors.yellow;
       case 'pink':
         return Colors.pink;
       case 'grey':

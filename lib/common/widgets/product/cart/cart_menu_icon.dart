@@ -4,10 +4,12 @@ import 'package:jaystore/utils/constants/colors.dart';
 
 class TCartCounterIcon extends StatelessWidget {
   const TCartCounterIcon({
-    super.key, required this.iconColor, required this.onPressed,
+    super.key, 
+    this.iconColor, 
+    required this.onPressed,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
 
 
@@ -19,14 +21,14 @@ class TCartCounterIcon extends StatelessWidget {
         Positioned(
           right: 0,
           child: Container(
-            width: 10,
-            height: 10,
+            width: 20,
+            height: 20,
             decoration: BoxDecoration(
               color: TColors.black,
               borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
-              child: Text('2', style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.white, fontSizeFactor: 0.8)),
+              child: Text('2', style: Theme.of(context).textTheme.labelSmall!.apply(color: TColors.white, fontSizeFactor: 1)),
             ),
           ),
         ),

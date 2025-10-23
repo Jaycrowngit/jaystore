@@ -7,10 +7,10 @@ import 'package:jaystore/utils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({
-    Key? key,
+    super.key,
     required this.subTitle,
     required this.onPressed, required this.image, required this.title,
-  }) : super(key: key);
+  });
 
   final String image, title, subTitle;
   final VoidCallback onPressed;
