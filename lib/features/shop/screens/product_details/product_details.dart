@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:jaystore/common/widgets/text/section_heading.dart';
+import 'package:readmore/readmore.dart';
 import 'package:jaystore/features/shop/screens/product_details/widgets/bottom_add_to_cart_widget.dart';
 import 'package:jaystore/features/shop/screens/product_details/widgets/product_attribute.dart';
 import 'package:jaystore/features/shop/screens/product_details/widgets/product_details_image_slider.dart';
@@ -47,15 +48,16 @@ class ProductDetailsScreen extends StatelessWidget {
               /// -Description
               const TSectionHeading(title: 'Description', showActionButton: false,),
               const SizedBox(height:TSizes.spaceBtwItems),
-              // ReadMore(
-              //   'This is a product description for a blue Nike short sleeve less vest. There are more things that can be added but were only adding this colors for now. the rest will be handled by the backend',
-              //   trinLine: 2,
-              //   trinMode:TrinMode.line,
-              //   trinCollapsedText:'Show more',
-              //   trinExpandedText: 'Less',
-              //   moreStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
-              //   lessStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
-              // ),
+              
+              ReadMoreText(
+                'This is a product description for a blue Nike short sleeve less vest. There are more things that can be added but were only adding this colors for now. the rest will be handled by the backend...    ',
+                trimLines: 2,
+                trimMode:TrimMode.Line,
+                trimCollapsedText:'Show more',
+                trimExpandedText: 'Less',
+                moreStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+                lessStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+              ),
               /// -Reviews
                Divider(),
                const SizedBox(height:TSizes.spaceBtwItems),
