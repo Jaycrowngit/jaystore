@@ -18,7 +18,7 @@ class TProductTitleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-     padding: const EdgeInsets.only(left: TSizes.sm),
+     padding: const EdgeInsets.only(left: TSizes.sm/2),
      child: Column(
        children: [
          Text(
