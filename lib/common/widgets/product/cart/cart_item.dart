@@ -11,6 +11,7 @@ class TCartItem extends StatelessWidget {
   const TCartItem({
     super.key,
   });
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +41,7 @@ class TCartItem extends StatelessWidget {
                  Text.rich(
                   TextSpan(
                     children: [
-                      TextSpan(text: ' Color ', style: Theme.of(context).textTheme.bodySmall),
+                      TextSpan(text: 'Color ', style: Theme.of(context).textTheme.bodySmall),
                       TextSpan(text: 'Green ', style: Theme.of(context).textTheme.bodyLarge),
                       TextSpan(text: 'Size ', style: Theme.of(context).textTheme.bodySmall),
                       TextSpan(text: 'UK 08 ', style: Theme.of(context).textTheme.bodyLarge),

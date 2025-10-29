@@ -10,6 +10,7 @@ import 'package:jaystore/common/widgets/text/section_heading.dart';
 import 'package:jaystore/features/personalization/screens/address/address.dart';
 import 'package:jaystore/features/personalization/screens/profile/profile.dart';
 import 'package:jaystore/features/shop/screens/cart/cart.dart';
+import 'package:jaystore/features/shop/screens/order/order.dart';
 import 'package:jaystore/utils/constants/colors.dart';
 import 'package:jaystore/utils/constants/sizes.dart';
 
@@ -48,7 +49,7 @@ class SettingsScreen extends StatelessWidget {
 
                   TSettingsMenuTile(icon: Iconsax.safe_home, title: 'My Address', subTitle: 'Set shoping delivery address', onTap: () => Get.to(() => UserAddressScreen())),
                   TSettingsMenuTile(icon: Iconsax.shopping_cart, title: 'My Cart', subTitle: 'add, remove products and move to chckout', onTap: () => Get.to(() => CartScreen())),
-                  TSettingsMenuTile(icon: Iconsax.bag_tick, title: 'My Orders', subTitle: 'In-progress and completed Orders', onTap: (){},),
+                  TSettingsMenuTile(icon: Iconsax.bag_tick, title: 'My Orders', subTitle: 'In-progress and completed Orders', onTap: () => Get.to(() => OrderScreen())),
                   TSettingsMenuTile(icon: Iconsax.bank, title: 'Bind Account', subTitle: 'Withdraw balance to registered bank account', onTap: (){},),
                   TSettingsMenuTile(icon: Iconsax.discount_shape, title: 'My Coupons', subTitle: 'List of all discount coupons', onTap: (){},),
                   TSettingsMenuTile(icon: Iconsax.notification, title: 'Notification Settings', subTitle: 'Set Notification', onTap: (){},),
