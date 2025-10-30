@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:jaystore/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:jaystore/common/widgets/custom_shapes/container/search_container.dart';
 import 'package:jaystore/common/widgets/layouts/grid_layouts.dart';
 import 'package:jaystore/common/widgets/product/product/brand_cards/product_card_vertical.dart';
 import 'package:jaystore/common/widgets/text/section_heading.dart';
+import 'package:jaystore/features/shop/screens/all_products/all_products.dart';
 import 'package:jaystore/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:jaystore/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:jaystore/features/shop/screens/home/widgets/promo_slider.dart';
@@ -60,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                             const SizedBox(height: TSizes.spaceBtwSections /2),
 
                             /// ---Heading
-                             TSectionHeading(title: 'Popular Products', onPressed: (){}),
+                             TSectionHeading(title: 'Popular Products', onPressed: () => Get.to(() => const AllProductsScreen())),
                             const SizedBox(height: TSizes.spaceBtwItems),
                             /// Popular Products display GridLayout
                           TGridLayout(itemCount: 6, itemBuilder: (_, index) => const TProductCardVertical())  

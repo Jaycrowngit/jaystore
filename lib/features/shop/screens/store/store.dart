@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:jaystore/common/widgets/appbar/appbar.dart';
 import 'package:jaystore/common/widgets/appbar/tabbar.dart';
 import 'package:jaystore/common/widgets/custom_shapes/container/search_container.dart';
@@ -6,6 +7,7 @@ import 'package:jaystore/common/widgets/layouts/grid_layouts.dart';
 import 'package:jaystore/common/widgets/product/cart/cart_menu_icon.dart';
 import 'package:jaystore/common/widgets/brands/brand_card.dart';
 import 'package:jaystore/common/widgets/text/section_heading.dart';
+import 'package:jaystore/features/shop/screens/brands/all_brand.dart';
 import 'package:jaystore/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:jaystore/utils/constants/colors.dart';
 import 'package:jaystore/utils/constants/sizes.dart';
@@ -49,7 +51,7 @@ class StoreScreen extends StatelessWidget {
       
       
                     /// ---Features Brands
-                    TSectionHeading(title: 'Featured Brands', onPressed:(){}),
+                    TSectionHeading(title: 'Featured Brands', onPressed:() => Get.to(()=> const AllBrandsScreen())),
                     const SizedBox(height: TSizes.spaceBtwItems /1.5),
                     /// Grid Layout
                     TGridLayout(itemCount: 4, mainAxisExtent:80,  itemBuilder: (_, index) {
