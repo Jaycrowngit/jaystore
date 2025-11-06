@@ -32,7 +32,7 @@ class TBrandCard extends StatelessWidget {
           Flexible(
             child: TCircularImage(
               isNetworkImage: false,
-              image: TImages.clothIcon,
+              image: TImages.nikeLogo,
               backgroundColor: Colors.transparent,
               overLayerColor: THelperFunctions.isDarkMode(context) ? TColors.white : TColors.dark,
               ),

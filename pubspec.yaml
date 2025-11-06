@@ -9,8 +9,10 @@ environment:
 #-----------PACKAGES---------------#
 dependencies:
   carousel_slider: ^5.1.1
+  firebase_core: ^4.2.1
   flutter:
     sdk: flutter
+  flutter_native_splash: ^2.4.7
   flutter_rating_bar: ^4.0.1
   get: ^4.7.2
   get_storage: ^2.1.1
@@ -21,6 +23,7 @@ dependencies:
   rating: ^1.0.0-dev.1
   readmore: ^3.0.0
   smooth_page_indicator: ^1.2.1
+  splash: ^1.2.0
   url_launcher: ^6.3.2
 
 #------Utility packages--------------#
