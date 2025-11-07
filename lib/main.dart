@@ -5,7 +5,6 @@ import 'package:get_storage/get_storage.dart';
 import 'package:jaystore/app.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:jaystore/data/repositories/authentication_repository.dart';
-import 'package:jaystore/firebase_options.dart';
 
 Future<void> main() async {
 
@@ -18,8 +17,8 @@ Future<void> main() async {
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   // Initialize Firebase
 
-   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then(
-    (FirebaseApp value) =>Get.put(AuthenticationRepository()));
+  //  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform) 
+  //  .then((FirebaseApp value) =>Get.put(AuthenticationRepository()));
 
   //TODO: Initialize Authentication
   
